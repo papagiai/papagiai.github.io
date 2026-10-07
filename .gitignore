@@ -1,0 +1,8 @@
+.DS_Store
+Thumbs.db
+.preview/
+__pycache__/
+
+# Local editorial and verification notes are not public website content.
+CONTENT_NOTES.md
+QA.md
