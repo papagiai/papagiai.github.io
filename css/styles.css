@@ -1181,14 +1181,3 @@ strong {
   }
 }
 
-.scholar-mark {
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  width:15px;
-  height:15px;
-  font-size:13px;
-  font-weight:800;
-  line-height:1;
-  letter-spacing:-.04em;
-}
