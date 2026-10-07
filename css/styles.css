@@ -180,38 +180,24 @@ strong {
   font-weight:650;
   letter-spacing:-.3px;
 }
-.profile .profile-name span {
-  display:block;
-  font-family:Inter,system-ui,sans-serif;
-  font-size:12px;
+.profile-identity {
+  font-size:13px;
   font-weight:500;
-  letter-spacing:.1em;
-  margin-top:7px;
-}
-.profile-role {
-  font-size:12px;
-  color:#c2cadb;
-  margin-top:15px;
-  line-height:1.7;
+  color:#eef0f7;
+  line-height:1.6;
+  margin-top:10px;
 }
 .profile-focus {
   font-size:12px;
   line-height:1.8;
-  margin-top:9px;
+  margin-top:12px;
   color:#dee3f0;
 }
-.profile-location {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:4px;
-  font-size:12px;
+.profile-role {
+  font-size:11px;
   color:#b7c1d6;
-  margin-top:10px;
-}
-.profile-location .icon {
-  width:13px;
-  height:13px;
+  margin-top:12px;
+  line-height:1.8;
 }
 .sidebar-nav {
   display:grid;
@@ -446,6 +432,40 @@ strong {
   background:#f0f3fa;
   color:#52617b;
 }
+.content-with-logo {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
+.content-main {
+  min-width:0;
+}
+.org-logo-wrap {
+  flex:0 0 112px;
+  width:112px;
+  height:64px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:8px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:6px;
+}
+.inline-logo {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+.logo-dark {
+  background:var(--navy);
+  border-color:var(--navy);
+}
+.logo-emblem .inline-logo {
+  max-width:32px;
+}
 .timeline {
   list-style:none;
   margin:0;
@@ -602,7 +622,7 @@ strong {
 }
 .certification {
   display:grid;
-  grid-template-columns:115px 1fr 24px;
+  grid-template-columns:115px minmax(0,1fr) 112px;
   align-items:start;
   gap:20px;
   padding:20px 0;
@@ -859,8 +879,36 @@ strong {
     top:20px;
   }
   .certification {
-    grid-template-columns:84px 1fr 18px;
+    grid-template-columns:minmax(0,1fr) 100px;
     gap:12px;
+  }
+  .certification .date {
+    grid-column:1;
+  }
+  .certification>div:not(.org-logo-wrap) {
+    grid-column:1;
+  }
+  .certification .org-logo-wrap {
+    grid-column:2;
+    grid-row:1 / 3;
+    align-self:center;
+    width:100px;
+  }
+  .content-with-logo {
+    flex-direction:column;
+    align-items:flex-start;
+    gap:14px;
+  }
+  .content-with-logo .org-logo-wrap {
+    flex-basis:64px;
+  }
+  .mobile-name {
+    min-width:0;
+    padding-right:10px;
+  }
+  .mobile-name span {
+    max-width:230px;
+    line-height:1.5;
   }
   .certification .date {
     font-size:11px;
