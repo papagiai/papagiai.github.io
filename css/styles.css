@@ -556,7 +556,7 @@ strong {
 .publication-list {
   list-style:none;
   padding:0;
-  counter-reset:paper 5;
+  counter-reset:paper 9;
   margin:0 0 18px;
 }
 .publication {
@@ -598,6 +598,33 @@ strong {
   font-style:italic;
   margin-top:3px;
 }
+
+.publication-subheading {
+  margin-top:30px;
+}
+.publication-list-plain .publication {
+  padding-left:24px;
+}
+.publication-list-plain .publication:before {
+  display:none;
+}
+.research-links {
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+  margin-top:18px;
+}
+.social-links .orcid-link {
+  background:#a6ce39;
+  color:#172033;
+  font-size:13px;
+  letter-spacing:-.04em;
+}
+.social-links .orcid-link:hover {
+  background:#b8dc55;
+  color:#172033;
+}
+
 .small-link {
   display:inline-flex;
   align-items:center;
