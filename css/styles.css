@@ -723,7 +723,7 @@ strong {
 }
 .contact-grid {
   display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
+  grid-template-columns:repeat(3,minmax(0,1fr));
   gap:17px;
 }
 .contact-card {
@@ -746,6 +746,17 @@ strong {
   font-size:12px;
   color:var(--muted);
   margin:6px 0;
+  overflow-wrap:anywhere;
+}
+.contact-card p a {
+  color:var(--muted);
+  text-decoration:none;
+}
+.contact-card p a:hover,
+.contact-card p a:focus-visible {
+  color:var(--accent);
+  text-decoration:underline;
+  text-underline-offset:3px;
 }
 .page-footer {
   border-top:1px solid var(--line);
@@ -779,6 +790,9 @@ strong {
   }
   .project-grid {
     grid-template-columns:1fr;
+  }
+  .contact-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
   }
 }
 @media(max-width:768px) {
