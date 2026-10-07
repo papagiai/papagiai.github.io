@@ -627,6 +627,84 @@ strong {
   margin-top:3px;
 }
 
+
+.inline-text-link,
+.thesis-title-link {
+  color:inherit;
+  text-decoration:underline;
+  text-decoration-color:#b8c2e8;
+  text-underline-offset:3px;
+}
+.inline-text-link:hover,
+.inline-text-link:focus-visible,
+.thesis-title-link:hover,
+.thesis-title-link:focus-visible {
+  color:var(--accent);
+  text-decoration-color:var(--accent);
+}
+.phd-pure-link {
+  margin-top:8px;
+}
+.phd-collaboration {
+  margin-top:16px;
+  padding:15px 17px;
+  border:1px solid #dfe4f2;
+  border-left:3px solid var(--accent);
+  border-radius:8px;
+  background:#f8f9fd;
+}
+.phd-collaboration-heading {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  color:var(--navy);
+  font-size:13px;
+}
+.phd-collaboration-heading .icon {
+  width:17px;
+  height:17px;
+  color:var(--accent);
+}
+.phd-collaboration p {
+  margin-top:8px !important;
+  font-size:12.5px !important;
+  line-height:1.65 !important;
+}
+.phd-collaboration a {
+  color:inherit;
+}
+.phd-collaboration a:hover,
+.phd-collaboration a:focus-visible {
+  color:var(--accent);
+}
+.institution-tags {
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:11px;
+}
+.institution-tag {
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  padding:5px 9px;
+  border:1px solid #dce1ed;
+  border-radius:999px;
+  background:#fff;
+  color:var(--muted);
+  font-size:10.5px;
+  font-weight:650;
+  text-decoration:none;
+}
+.institution-tag-imperial {
+  color:var(--navy);
+  border-color:#cdd5eb;
+}
+.institution-tag .icon {
+  width:11px;
+  height:11px;
+}
+
 .publication-subheading {
   margin-top:30px;
 }
