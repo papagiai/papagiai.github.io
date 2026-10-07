@@ -1181,3 +1181,9 @@ strong {
   }
 }
 
+
+.ielts-mark span {
+  font-size:17px;
+  font-weight:800;
+  letter-spacing:.02em;
+}
