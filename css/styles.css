@@ -181,11 +181,20 @@ strong {
   letter-spacing:-.3px;
 }
 .profile-identity {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
   font-size:13px;
   font-weight:500;
   color:#eef0f7;
   line-height:1.6;
   margin-top:10px;
+}
+.profile-identity .icon {
+  width:15px;
+  height:15px;
+  color:#b5c1ff;
 }
 .profile-focus {
   font-size:12px;
@@ -321,6 +330,24 @@ strong {
   width:14px;
   height:14px;
 }
+
+.flag-icon {
+  display:inline-block;
+  width:18px;
+  height:12px;
+  object-fit:cover;
+  border-radius:2px;
+  box-shadow:0 0 0 1px #1a1e2e1f;
+  vertical-align:-1px;
+  flex:0 0 auto;
+}
+.country-inline {
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  white-space:nowrap;
+}
+
 .intro-actions {
   display:flex;
   align-items:center;
@@ -730,12 +757,19 @@ strong {
     color:#fff;
   }
   .mobile-name span {
-    display:block;
+    display:flex;
+    align-items:center;
+    gap:5px;
     font-family:Inter,system-ui,sans-serif;
     font-size:10px;
     color:#c2cadb;
     letter-spacing:.02em;
     margin-top:3px;
+  }
+  .mobile-name span .icon {
+    width:12px;
+    height:12px;
+    color:#b5c1ff;
   }
   .menu-toggle {
     display:flex;
