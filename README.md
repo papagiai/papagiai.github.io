@@ -1,6 +1,6 @@
 # Ioannis Papagiannis, PhD
 
-Professional and academic portfolio: **https://papagiai.github.io/**
+Live website: [https://papagiai.github.io/](https://papagiai.github.io/)
 
 EU Project Analyst at REZOS Brands, with a background in mechanical engineering, materials science, electrochemistry and applied R&D.
 
