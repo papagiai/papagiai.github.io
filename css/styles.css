@@ -856,6 +856,21 @@ strong {
 .certification h3 {
   font-size:15px;
 }
+.certification-title {
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.certification-icon {
+  width:19px;
+  height:19px;
+}
+.fire-icon {
+  color:#b96538;
+}
+.medical-cross-icon {
+  color:#c62828;
+}
 .certification p:not(.date) {
   color:var(--muted);
   font-size:12px;
