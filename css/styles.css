@@ -706,14 +706,6 @@ strong {
 }
 
 
-.publication-metrics-note {
-  max-width:870px;
-  margin-top:-10px;
-  margin-bottom:25px;
-  font-size:11.5px;
-  line-height:1.65;
-  color:var(--muted);
-}
 .journal-venue-link {
   color:inherit;
   text-decoration:none;
@@ -737,6 +729,10 @@ strong {
 }
 .publication-links .small-link {
   margin-top:0;
+  min-height:32px;
+  height:32px;
+  display:inline-flex;
+  align-items:center;
 }
 .journal-button {
   background:#f4f6fb;
