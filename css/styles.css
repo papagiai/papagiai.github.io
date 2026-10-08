@@ -498,6 +498,31 @@ strong {
   background:#f0f3fa;
   color:#52617b;
 }
+.project-links {
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:14px;
+}
+.project-links .small-link {
+  margin-top:0;
+}
+.availability-note {
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  min-height:32px;
+  padding:5px 9px;
+  border-radius:4px;
+  background:#f1f3f6;
+  color:var(--muted);
+  font-size:11px;
+}
+.availability-note .icon {
+  width:14px;
+  height:14px;
+}
 .content-with-logo {
   display:flex;
   align-items:center;
