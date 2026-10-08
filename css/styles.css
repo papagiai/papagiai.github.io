@@ -860,15 +860,6 @@ strong {
   width:24px;
   height:24px;
 }
-.certification-visuals {
-  grid-column:3;
-  grid-row:1 / 3;
-  align-self:center;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:8px;
-}
 .fire-icon {
   color:#b96538;
 }
@@ -1264,12 +1255,6 @@ strong {
     align-self:center;
     width:100px;
   }
-  .certification .certification-visuals {
-    grid-column:2;
-    grid-row:1 / 3;
-    width:100px;
-  }
-  .certification .certification-visuals .org-logo-wrap,
   .certification .certification-symbol-tile {
     width:100%;
   }
