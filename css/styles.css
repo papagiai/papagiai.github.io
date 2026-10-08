@@ -724,15 +724,20 @@ strong {
 .publication-links {
   display:flex;
   flex-wrap:wrap;
+  align-items:flex-start;
   gap:7px;
   margin-top:10px;
 }
 .publication-links .small-link {
-  margin-top:0;
+  margin:0 !important;
   min-height:32px;
   height:32px;
+  box-sizing:border-box;
   display:inline-flex;
   align-items:center;
+  justify-content:center;
+  line-height:1;
+  vertical-align:top;
 }
 .journal-button {
   background:#f4f6fb;
