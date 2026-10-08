@@ -65,6 +65,6 @@ Contact currently links to LinkedIn. Add an email only when the owner chooses a 
 
 ## Design and licensing
 
-Independently implemented in a restrained academic style: navy sidebar, circular identity area, serif headings, pale background, timelines and publication cards. No reference-site personal content, photographs, logos or source code are included. Icons and favicon are original SVG shapes. Organisation logos are stored in `assets/images/logos/`; official source URLs and asset notes are recorded in `assets/images/logos/SOURCES.md`. Preserve logo proportions and check both desktop and mobile when replacing them.
+Independently implemented in a restrained academic style: navy sidebar, circular identity area, serif headings, pale background, timelines and publication cards. No reference-site personal content, photographs, logos or source code are included. Most icons and the favicon are original SVG shapes; the Google Scholar mark uses the [Academicons Google Scholar glyph](https://github.com/jpswalsh/academicons), under the SIL Open Font License. Organisation logos are stored in `assets/images/logos/`; official source URLs and asset notes are recorded in `assets/images/logos/SOURCES.md`. Preserve logo proportions and check both desktop and mobile when replacing them.
 
 Inter and Source Serif 4 are redistributed under the SIL Open Font License. Keep the included licence files with the fonts.
