@@ -56,9 +56,12 @@ if re.search(r'[\w.+-]+@[\w.-]+\.[a-z]{2,}', html, re.I):
 if re.search(r'lorem ipsum|placeholder|coming soon|href=[\'"]#[\'"]', html, re.I):
     errors.append('Placeholder content found')
 for phrase in ('EU Project Analyst', '14 September 2026', 'October 2025 – September 2026',
-               'Degree awarded: March 2025', 'RECEA', 'FoodTrust AI', 'MyFarm'):
+               'Degree awarded: March 2025', 'MyFarm'):
     if phrase not in html:
         errors.append(f'Missing confirmed content: {phrase}')
+for phrase in ('RECEA', 'FoodTrust AI'):
+    if phrase in html:
+        errors.append(f'Project is not cleared for public listing: {phrase}')
 if 'prefers-reduced-motion' not in css or ':focus-visible' not in css:
     errors.append('Missing reduced-motion or visible-focus styles')
 
